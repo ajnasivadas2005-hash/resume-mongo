@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeF2;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+.header {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    text-align: center;
+    padding: 35px 25px;
+    border-top: 6px solid #512da8;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.header h1 {
+    color: #29213d;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    margin: 5px 0;
+}
+
+a {
+    color: #512da8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: #512da8;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #351879;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    padding: 35px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+h2 {
+    color: #512da8;
+    font-size: 19px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #512da8;
+    padding-bottom: 7px;
+    margin-bottom: 13px;
+}
+
+h3 {
+    color: #333;
+    font-size: 16px;
+    margin: 15px 0 7px;
+}
+
+p {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 11px;
+    text-align: left;
+}
+
+th {
+    background: #eee8fa;
+    color: #351879;
+}
+
+footer {
+    max-width: 900px;
+    margin: auto;
+    background: #29213d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
+    body {
+        background: white;
+        padding: 0;
+        font-size: 11pt;
+    }
+
+    .header, main, footer {
+        max-width: none;
+        box-shadow: none;
+    }
+
+    .header {
+        border-top: 3px solid #512da8;
+        padding: 15px 0;
+    }
+
+    main {
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    button {
+        display: none;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+
+    a {
+        color: black;
+    }
+}
